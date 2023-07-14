@@ -1,4 +1,5 @@
 class LoginPage{
+    
     getEmailBox(){
         return cy.get('#login-email').type('mb@babayigit.net')
     }
@@ -10,6 +11,7 @@ class LoginPage{
     getLoginButton(){
         return cy.get('#sign_up > :nth-child(3) > .btn').click()
     }
+
     getAssert(){
         return cy.get(':nth-child(6) > .icon > a').should('contains.text','courses')
     }

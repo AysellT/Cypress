@@ -12,4 +12,5 @@ describe('', () => {
     it('url', () => {
         cy.url().should('eq','google')
     });
+
 });
